@@ -1,0 +1,19 @@
+
+物品有价值，体积，重量，3个属性。背包有容积，承重，两个属性。
+要求在随机生成的一堆物品中，选择一部分装入背包，在总体积不超过容积，且总重量不超过承重的情况下，总价值最高。
+high_value_package_examples 当中有100组随机情况。
+要求输出格式：
+
+output_arr = array(
+  [0] => array(
+    [item_pick] => array(1,3,8,9),
+    [total_price] => 120,
+  ),
+  ...
+  [99] => array(
+    [item_pick] => array(4,5,6),
+    [total_price] => 131,
+  ),
+);
+
+json_encode(output_arr);
